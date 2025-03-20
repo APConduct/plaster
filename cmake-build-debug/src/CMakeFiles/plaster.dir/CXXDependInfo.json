@@ -1,0 +1,30 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"src/CMakeFiles/plaster.dir/mod/core.ixx.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "mod",
+			"source" : "/Users/aidanjost/projects/plaster/src/mod/core.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"dir-cur-bld" : "/Users/aidanjost/projects/plaster/cmake-build-debug/src",
+	"dir-cur-src" : "/Users/aidanjost/projects/plaster/src",
+	"dir-top-bld" : "/Users/aidanjost/projects/plaster/cmake-build-debug",
+	"dir-top-src" : "/Users/aidanjost/projects/plaster",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/Users/aidanjost/projects/plaster/cmake-build-debug/src/CMakeFiles/plaster.dir"
+}
