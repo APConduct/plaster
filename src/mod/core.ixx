@@ -9,6 +9,101 @@ export module plaster.core;
 export namespace plaster
 {
 
+    /// @brief Result type for error handling
+    template <typename T, typename E = std::string>
+    struct Result
+    {
+    protected:
+        /// @brief The value of the result.
+        std::variant<T, E> value_;
+    public:
+
+        /// @brief Construct a new Result with a success value.
+        explicit Result(const T& success) : value_(success) {}
+
+        /// @brief Construct a new Result with a success value.
+        explicit Result(T&& success) : value_(std::move(success)) {}
+
+        ///
+        explicit Result(E&& error) : value_(std::move(error)) {}
+
+        // [[nodiscard]] bool is_ok() const { return std::holds_alternative<T>(value_); }
+        // [[nodiscard]] bool is_err() const {return std::holds_alternative<E>(value_); }
+
+        /// @brief Check if the result is an ok value.
+        [[nodiscard]] bool is_ok() const { return value_.index() == 0; }
+
+        /// @brief Check if the result is an error value.
+        [[nodiscard]] bool is_err() const { return value_.index() == 1; }
+
+        /// @brief Unwrap the value of the result.
+        const T& unwrap() const &
+        {
+            if (is_err()) throw std::runtime_error("Unwrapped an error Result");
+            return std::get<E>(value_);
+        }
+
+        T unwrap() &&
+        {
+            if (is_err()) throw std::runtime_error("Unwrapped an error Result");
+            return std::move(std::get<E>(value_));
+        }
+
+        const E& error() const &
+        {
+            if (is_ok()) throw std::runtime_error("Called error() on an ok Result");
+            return std::get<E>(value_);
+        }
+
+        template <typename F>
+        auto map(F&& f) const -> Result<std::invoke_result<F, T>, E>
+        {
+            if (is_ok())
+            {
+                // return Result<std::invoke_result<F, T>, E>(f(std::get<T>(value_)));
+
+                return Result<std::invoke_result<F, T>, E>(f(std::get<0>(value_)));
+
+            }
+            // return Result<std::invoke_result<F, T>, E>(std::get<E>(value_));
+
+            return Result<std::invoke_result<F, T>, E>(std::get<1>(value_));
+        }
+
+        template <typename F>
+        auto and_then(F&& f) const -> std::invoke_result<F, T>
+        {
+            if (is_ok())
+            {
+                return f(std::get<0>(value_));
+            }
+            return std::invoke_result<F, T>(std::get<1>(value_));
+        }
+    };
+
+    // Resource management
+    template<typename  T>
+    using Ref = std::shared_ptr<T>;
+
+    template<typename T, typename... Args>
+    Ref<T> make_ref(Args&... args)
+    {
+        return std::make_shared<T>(std::forward<Args>(args)...);
+    }
+
+
+
+    template<typename T>
+    concept CanPaint = requires(T t, class Painter& p)
+    {
+        { t.paint(p) } -> std::same_as<void>;
+    };
+
+    template<typename T>
+    concept EventHandler = requires(T t, class Event& e)
+    {
+        { t.handle(e) } -> std::same_as<bool>;
+    };
 
 
 
@@ -35,6 +130,24 @@ export namespace plaster
         Point operator-(const Point &other) const
         {
             return Point(x - other.x, y - other.y);
+        }
+
+        Point operator+(const Point &other) const
+        {
+            return Point(x + other.x, y + other.y);
+        }
+
+        Point operator*(const Point &other) const
+        {
+            return Point(x * other.x, y * other.y);
+        }
+
+        /// @brief Multiply a point by a scalar.
+        /// @param scalar The scalar to multiply by.
+        template <typename U>
+        Point<U> operator/(T scalar) const
+        {
+            return Point(x / scalar, y / scalar);
         }
     };
 

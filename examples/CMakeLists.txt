@@ -1,0 +1,1 @@
+project(plaster_examples)
