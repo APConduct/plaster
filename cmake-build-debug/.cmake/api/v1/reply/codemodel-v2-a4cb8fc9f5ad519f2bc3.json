@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						3,
+						4
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -20,6 +21,37 @@
 					"source" : "."
 				},
 				{
+					"build" : "_deps/glfw-build",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-_deps.glfw-build-Debug-81d4f461aa69ab6fd4e3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/glfw-src"
+				},
+				{
+					"build" : "_deps/glfw-build/src",
+					"jsonFile" : "directory-_deps.glfw-build.src-Debug-4ae9615550f1a687d20b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/glfw-src/src",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
 					"build" : "src",
 					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
 					"minimumCMakeVersion" : 
@@ -27,11 +59,11 @@
 						"string" : "3.30"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 1,
+					"projectIndex" : 2,
 					"source" : "src",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -42,7 +74,7 @@
 						"string" : "3.30"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 2,
+					"projectIndex" : 3,
 					"source" : "examples"
 				}
 			],
@@ -53,7 +85,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"directoryIndexes" : 
 					[
@@ -64,19 +97,33 @@
 				{
 					"directoryIndexes" : 
 					[
-						1
+						1,
+						2
 					],
-					"name" : "plaster_lib",
+					"name" : "GLFW",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						0
+						0,
+						2
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						2
+						3
+					],
+					"name" : "plaster_lib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
 					],
 					"name" : "plaster_examples",
 					"parentIndex" : 0
@@ -85,10 +132,24 @@
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 1,
+					"directoryIndex" : 2,
+					"id" : "glfw::@fa9f4482d3a2b070f206",
+					"jsonFile" : "target-glfw-Debug-9b4864692e99ec999623.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
 					"id" : "plaster::@145eef247bfb46b6828c",
-					"jsonFile" : "target-plaster-Debug-a309b1948295fb1f5cee.json",
+					"jsonFile" : "target-plaster-Debug-b189a20429c379733eb9.json",
 					"name" : "plaster",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "update_mappings::@fa9f4482d3a2b070f206",
+					"jsonFile" : "target-update_mappings-Debug-a2f63e468a44a87eb5d7.json",
+					"name" : "update_mappings",
 					"projectIndex" : 1
 				}
 			]

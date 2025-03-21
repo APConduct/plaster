@@ -85,6 +85,14 @@
 				"cxxm",
 				"c++m"
 			]
+		},
+		{
+			"compiler" : 
+			{
+				"implicit" : {},
+				"path" : "/opt/homebrew/opt/llvm/bin/clang"
+			},
+			"language" : "OBJC"
 		}
 	],
 	"version" : 

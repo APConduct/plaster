@@ -1079,7 +1079,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1794,6 +1794,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Python",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Python"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/Users/aidanjost/projects/plaster/.venv/bin/python][cfound components: Interpreter ][v3.9.6()]"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
 			"properties" : 
 			[
@@ -1820,6 +1832,174 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/bin/git"
+		},
+		{
+			"name" : "GLAD_ALL_EXTENSIONS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Include all extensions instead of those specified by GLAD_EXTENSIONS"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "GLAD_API",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "API type/version pairs, like \"gl=4.6,gles=\", no version means latest"
+				}
+			],
+			"type" : "STRING",
+			"value" : "gl=4.6"
+		},
+		{
+			"name" : "GLAD_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-build"
+		},
+		{
+			"name" : "GLAD_EXPORT",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Set export variables for external project"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
+		},
+		{
+			"name" : "GLAD_EXTENSIONS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to extensions file or comma separated list of extensions, if missing all extensions are included"
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "GLAD_GENERATOR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Language to generate the bindings for"
+				}
+			],
+			"type" : "STRING",
+			"value" : "c"
+		},
+		{
+			"name" : "GLAD_INSTALL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Generate installation target"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "GLAD_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "GLAD_NO_LOADER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No loader"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "GLAD_OUT_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Output directory"
+				}
+			],
+			"type" : "STRING",
+			"value" : "/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-build"
+		},
+		{
+			"name" : "GLAD_PROFILE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "OpenGL Profile"
+				}
+			],
+			"type" : "STRING",
+			"value" : "core"
+		},
+		{
+			"name" : "GLAD_REPRODUCIBLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Reproducible build"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "GLAD_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src"
+		},
+		{
+			"name" : "GLAD_SPEC",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Name of the spec or list of multiple specs (separated by semicolons)."
+				}
+			],
+			"type" : "STRING",
+			"value" : "gl"
 		},
 		{
 			"name" : "GLFW_BINARY_DIR",
@@ -1978,6 +2158,42 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "PLASTER_ENABLE_MARCO_POLO",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Build with walktrough"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
+		},
+		{
+			"name" : "Python3_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "/Users/aidanjost/projects/plaster/.venv/bin/python"
+		},
+		{
+			"name" : "Python_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "/Users/aidanjost/projects/plaster/.venv/bin/python"
+		},
+		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
 			"properties" : 
 			[
@@ -1988,6 +2204,90 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "/usr/local"
+		},
+		{
+			"name" : "_Python_Compiler_REASON_FAILURE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Compiler reason failure"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_Python_Development_REASON_FAILURE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Development reason failure"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_Python_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/Users/aidanjost/projects/plaster/.venv/bin/python"
+		},
+		{
+			"name" : "_Python_INTERPRETER_PROPERTIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Python Properties"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "Python;3;9;6;64;32;<none>;cpython-39-darwin;abi3;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9;/Users/aidanjost/projects/plaster/.venv/lib/python3.9/site-packages;/Users/aidanjost/projects/plaster/.venv/lib/python3.9/site-packages"
+		},
+		{
+			"name" : "_Python_INTERPRETER_SIGNATURE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "e27035f75024afd833a6722467b1aa56"
+		},
+		{
+			"name" : "_Python_NumPy_REASON_FAILURE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "NumPy reason failure"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "glm_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for glm."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/share/glm"
 		},
 		{
 			"name" : "plaster_BINARY_DIR",

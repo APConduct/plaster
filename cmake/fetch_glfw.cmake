@@ -1,4 +1,3 @@
- include(cmake/fetch_glad.cmake)
 
 
  FetchContent_Declare(

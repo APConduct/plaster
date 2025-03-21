@@ -55,6 +55,7 @@ export namespace plaster
             return std::get<E>(value_);
         }
 
+        /// @brief Map the value of the result to a new value.
         template <typename F>
         auto map(F&& f) const -> Result<std::invoke_result<F, T>, E>
         {
@@ -106,8 +107,7 @@ export namespace plaster
     };
 
 
-
-
+    /// @brief A point in 2D space.
     template <typename T>
     struct Point
     {
@@ -117,34 +117,57 @@ export namespace plaster
 
     public:
 
+        /// @brief Construct a new Point object.
         Point(T x, T y) : x_(x), y_(y) {}
         // explicit operator T() const { return x; }
 
+        /// @brief Set the x and y values of the point.
+        /// @param x The new x value.
+        /// @param y The new y value.
         void set(T x, T y) { x_ = x, y_ = y; }
 
+        /// @brief Set the x value of the point.
+        /// @param x The new x value.
         void set_x(T x) { x_ = x; }
+
+        /// @brief Set the y value of the point.
         void set_y(T y) { y_ = y; }
 
+        /// @brief Check if two points are equal.
+        /// @param other The other point to compare to.
+        /// @return True if the points are equal.
         bool operator==(const Point &other) const
         {
             return x_ == other.x_ && y_ == other.y_;
         }
 
+        /// @brief Check if two points are not equal.
+        /// @param other The other point to compare to.
+        /// @return True if the points are not equal.
         float distance(const Point &other) const
         {
             return sqrt(pow(x_ - other.x_, 2) + pow(y_ - other.y_, 2));
         }
 
+        /// @brief Subtract a point from this point.
+        /// @param other The point to subtract.
+        /// @return The result of the subtraction.
         Point operator-(const Point &other) const
         {
             return Point(x_ - other.x_, y_ - other.y_);
         }
 
+        /// @brief Add a point to this point.
+        /// @param other The point to add.
+        /// @return The result of the addition.
         Point operator+(const Point &other) const
         {
             return Point(x_ + other.x_, y_ + other.y_);
         }
 
+        /// @brief Multiply a point by another point.
+        /// @param other The point to multiply by.
+        /// @return The result of the multiplication.
         Point operator*(const Point &other) const
         {
             return Point(x_ * other.x_, y_ * other.y_);
@@ -152,34 +175,65 @@ export namespace plaster
 
         /// @brief Multiply a point by a scalar.
         /// @param scalar The scalar to multiply by.
+        /// @return The result of the multiplication.
+        /// @tparam U The type of the scalar.
         template <typename U>
         Point<U> operator/(T scalar) const
         {
             return Point(x_ / scalar, y_ / scalar);
         }
 
+        /// @brief Get the x value of the point.
+        /// @return The x value.
         T x() const { return x_; }
+
+        /// @brief Get the y value of the point.
+        /// @return The y value.
         T y() const { return y_; }
 
+        /// @brief Set the x value of the point.
+        /// @param x The new x value.
+        /// @return A reference to the point.
         Point& at_x(T x) { x_ = x; return *this; }
+
+        /// @brief Set the y value of the point.
+        /// @param y The new y value.
+        /// @return A reference to the point.
         Point& at_y(T y) { y_ = y; return *this; }
     };
 
+    /// @brief A size in 2D space.
+    /// @tparam T The type of the size.
     template <typename T>
     struct Size
     {
 
     protected:
+
+        /// @brief The width of the size.
         T width_;
+
+        /// @brief The height of the size.
         T height_;
 
     public:
 
+        /// @brief Construct a new Size object.
+        /// @param width The width of the size.
+        /// @param height The height of the size.
         Size(T width, T height) : width_(width), height_(height) {}
 
+        /// @brief Set the width and height of the size.
+        /// @param width The new width.
+        /// @param height The new height.
         void set(T width, T height) { width_ = width; height_ = height; }
 
+        /// @brief Set the width of the size.
+        /// @param width The new width.
         void set_width(T width) { width_ = width; }
+
+        /// @brief Set the height of the size.
+        /// @param height The new height.
         void set_height(T height) { height_ = height; }
 
         bool operator==(const Size &other) const
@@ -187,43 +241,103 @@ export namespace plaster
             return width_ == other.width_ && height_ == other.height_;
         }
 
+        /// @brief Subtract a size from this size.
+        /// @param other The size to subtract.
+        /// @return The result of the subtraction.
         Size operator-(const Size &other) const
         {
             return Size(width_ - other.width_, height_ - other.height_);
         }
 
+        /// @brief Add a size to this size.
+        /// @param other The size to add.
+        /// @return The result of the addition.
         Size operator+(const Size &other) const
         {
             return Size(width_ + other.width_, height_ + other.height_);
         }
 
+        /// @brief Multiply a size by another size.
+        /// @param other The size to multiply by.
+        /// @return The result of the multiplication.
         Size operator*(Size other) const{ return Size(width_ * other.width_, height_ * other.height_); }
 
+        /// @brief Multiply a size by a scalar.\
+        /// @param scalar The scalar to multiply by.
+        /// @return The result of the multiplication.
         Size operator*(T scalar) const { return Size(width_ * scalar, height_ * scalar); }
 
+        /// @brief Divide a size by a scalar.
+        /// @param scalar The scalar to divide by.
+        /// @return The result of the division.
         Size operator/(T scalar) const { return Size(width_ / scalar, height_ / scalar); }
     };
 
+    /// @brief A line in 2D space.
+    /// @tparam T The type of the line.
     template<typename T>
     struct Line
     {
     protected:
+
+        /// @brief The start point of the line.
         Point<T> start_;
+
+        /// @brief The end point of the line.
         Point<T> end_;
 
     public:
+
+        /// @brief Construct a new Line object.
+        /// @param start The start point of the line.
+        /// @param end The end point of the line.
+        /// @tparam T The type of the line.
         Line(Point<T> start, Point<T> end) : start_(start), end_(end) {}
+
+        /// @brief Construct a new Line object.
+        /// @param x1 The x value of the start point.
+        /// @param y1 The y value of the start point.
+        /// @param x2 The x value of the end point.
+        /// @param y2 The y value of the end point.
+        /// @tparam T The type of the line.
         Line(T x1, T y1, T x2, T y2) : start_(x1, y1), end_(x2, y2) {}
 
+        /// @brief Set the start and end points of the line.
+        /// @param x1 The x value of the start point.
+        /// @param y1 The y value of the start point.
+        /// @param x2 The x value of the end point.
+        /// @param y2 The y value of the end point.
         void set(T x1, T y1, T x2, T y2){ start_.set(x1, y1); end_.set(x2, y2); }
+
+        /// @brief Set the start and end points of the line.
+        /// @param start The start point of the line.
+        /// @param end The end point of the line.
         void set(Point<T> start, Point<T> end){ start_ = start; end_ = end; }
+
+        /// @brief Set the start point of the line.
+        /// @param start The new start point.
         void set_start(Point<T> start){ start_ = start; }
+
+        /// @brief Set the end point of the line.
+        /// @param end The new end point.
         void set_end(Point<T> end){ end_ = end; }
 
+        /// @brief Get the start point of the line.
+        /// @return The start point.
         Point<T> start() const { return start_; }
+
+        /// @brief Get the end point of the line.
+        /// @return The end point.
         Point<T> end() const { return end_; }
 
+        /// @brief Set the start point of the line.
+        /// @param start The new start point.
+        /// @return A reference to the line.
         Line& start(Point<T> start) { start_ = start; return *this; }
+
+        /// @brief Set the end point of the line.
+        /// @param end The new end point.
+        /// @return A reference to the line.
         Line& end(Point<T> end) { end_ = end; return *this; }
 
     };
@@ -320,9 +434,12 @@ export namespace plaster
 
     struct Color
     {
+    protected:
         uint8_t r_, g_ ,b_, a_;
 
+    public:
 
+        Color() : r_(0), g_(0), b_(0), a_(0) {}
 
         Color(uint8_t r, uint8_t g, uint8_t b, uint8_t a) : r_(r), g_(g), b_(b), a_(a) {}
 
@@ -368,6 +485,8 @@ export namespace plaster
                 static_cast<uint8_t>(hex >> 8 & 0xFF),
                 static_cast<uint8_t>(hex & 0xFF)};
         }
+
+        static Color blank() { return {0, 0, 0, 0}; }
     };
 
 

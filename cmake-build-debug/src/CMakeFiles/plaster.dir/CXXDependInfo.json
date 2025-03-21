@@ -15,6 +15,36 @@
 			"source" : "/Users/aidanjost/projects/plaster/src/mod/core.ixx",
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
+		},
+		"src/CMakeFiles/plaster.dir/mod/event.ixx.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "mod",
+			"source" : "/Users/aidanjost/projects/plaster/src/mod/event.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"src/CMakeFiles/plaster.dir/mod/renderer.ixx.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "mod",
+			"source" : "/Users/aidanjost/projects/plaster/src/mod/renderer.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"src/CMakeFiles/plaster.dir/mod/window.ixx.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "mod",
+			"source" : "/Users/aidanjost/projects/plaster/src/mod/window.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
 		}
 	},
 	"dir-cur-bld" : "/Users/aidanjost/projects/plaster/cmake-build-debug/src",
@@ -23,7 +53,12 @@
 	"dir-top-src" : "/Users/aidanjost/projects/plaster",
 	"exports" : [],
 	"forward-modules-from-target-dirs" : [],
-	"include-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps/glad-src/include",
+		"_deps/glfw-src/include",
+		"/opt/homebrew/include"
+	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],
 	"module-dir" : "/Users/aidanjost/projects/plaster/cmake-build-debug/src/CMakeFiles/plaster.dir"

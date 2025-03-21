@@ -1,4 +1,7 @@
-/Users/aidanjost/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/homebrew/Cellar/ninja/1.12.1/bin/ninja -DCMAKE_C_COMPILER=/opt/homebrew/opt/llvm/bin/clang -DCMAKE_CXX_COMPILER=/opt/homebrew/opt/llvm/bin/clang++ -G Ninja -S /Users/aidanjost/projects/plaster -B /Users/aidanjost/projects/plaster/cmake-build-debug
--- Configuring done (0.0s)
+/Users/aidanjost/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/homebrew/Cellar/ninja/1.12.1/bin/ninja -DCMAKE_C_COMPILER=/opt/homebrew/opt/llvm/bin/clang -DCMAKE_CXX_COMPILER=/opt/homebrew/opt/llvm/bin/clang++ -G Ninja -DPython_EXECUTABLE=/Users/aidanjost/projects/plaster/.venv/bin/python -DPython3_EXECUTABLE=/Users/aidanjost/projects/plaster/.venv/bin/python -S /Users/aidanjost/projects/plaster -B /Users/aidanjost/projects/plaster/cmake-build-debug
+-- glad found:  at: /Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src
+-- Including Cocoa support
+-- glm found: 1 at: /opt/homebrew/share/glm
+-- Configuring done (0.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/aidanjost/projects/plaster/cmake-build-debug

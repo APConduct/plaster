@@ -1,5 +1,11 @@
 /Users/aidanjost/projects/plaster/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/aidanjost/projects/plaster/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build/CMakeFiles/edit_cache.dir
+/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build/CMakeFiles/rebuild_cache.dir
+/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build/src/CMakeFiles/glfw.dir
+/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build/src/CMakeFiles/edit_cache.dir
+/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build/src/CMakeFiles/rebuild_cache.dir
 /Users/aidanjost/projects/plaster/cmake-build-debug/src/CMakeFiles/plaster.dir
 /Users/aidanjost/projects/plaster/cmake-build-debug/src/CMakeFiles/edit_cache.dir
 /Users/aidanjost/projects/plaster/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir

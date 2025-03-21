@@ -355,6 +355,50 @@ FETCHCONTENT_UPDATES_DISCONNECTED_GLFW:BOOL=OFF
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
+//Include all extensions instead of those specified by GLAD_EXTENSIONS
+GLAD_ALL_EXTENSIONS:BOOL=OFF
+
+//API type/version pairs, like "gl=4.6,gles=", no version means
+// latest
+GLAD_API:STRING=gl=4.6
+
+//Value Computed by CMake
+GLAD_BINARY_DIR:STATIC=/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-build
+
+//Set export variables for external project
+GLAD_EXPORT:BOOL=ON
+
+//Path to extensions file or comma separated list of extensions,
+// if missing all extensions are included
+GLAD_EXTENSIONS:STRING=
+
+//Language to generate the bindings for
+GLAD_GENERATOR:STRING=c
+
+//Generate installation target
+GLAD_INSTALL:BOOL=OFF
+
+//Value Computed by CMake
+GLAD_IS_TOP_LEVEL:STATIC=OFF
+
+//No loader
+GLAD_NO_LOADER:BOOL=OFF
+
+//Output directory
+GLAD_OUT_DIR:STRING=/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-build
+
+//OpenGL Profile
+GLAD_PROFILE:STRING=core
+
+//Reproducible build
+GLAD_REPRODUCIBLE:BOOL=OFF
+
+//Value Computed by CMake
+GLAD_SOURCE_DIR:STATIC=/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src
+
+//Name of the spec or list of multiple specs (separated by semicolons).
+GLAD_SPEC:STRING=gl
+
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build
 
@@ -388,6 +432,18 @@ PLASTER_BUILD_EXAMPLES:BOOL=ON
 
 //Build the tests
 PLASTER_BUILD_TESTS:BOOL=ON
+
+//Build with walktrough
+PLASTER_ENABLE_MARCO_POLO:BOOL=ON
+
+//No help, variable specified on the command line.
+Python3_EXECUTABLE:UNINITIALIZED=/Users/aidanjost/projects/plaster/.venv/bin/python
+
+//No help, variable specified on the command line.
+Python_EXECUTABLE:UNINITIALIZED=/Users/aidanjost/projects/plaster/.venv/bin/python
+
+//The directory containing a CMake configuration file for glm.
+glm_DIR:PATH=/opt/homebrew/share/glm
 
 //Value Computed by CMake
 plaster_BINARY_DIR:STATIC=/Users/aidanjost/projects/plaster/cmake-build-debug
@@ -555,7 +611,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJC_COMPILER
@@ -618,6 +674,8 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/Users/aidanjost/projects/plaster/.venv/bin/python][cfound components: Interpreter ][v3.9.6()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
@@ -628,4 +686,14 @@ GLFW_PKG_CONFIG_LIBS_PRIVATE:INTERNAL=-framework Cocoa -framework IOKit -framewo
 GLFW_PKG_CONFIG_REQUIRES_PRIVATE:INTERNAL=
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//Compiler reason failure
+_Python_Compiler_REASON_FAILURE:INTERNAL=
+//Development reason failure
+_Python_Development_REASON_FAILURE:INTERNAL=
+_Python_EXECUTABLE:INTERNAL=/Users/aidanjost/projects/plaster/.venv/bin/python
+//Python Properties
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;6;64;32;<none>;cpython-39-darwin;abi3;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9;/Users/aidanjost/projects/plaster/.venv/lib/python3.9/site-packages;/Users/aidanjost/projects/plaster/.venv/lib/python3.9/site-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=e27035f75024afd833a6722467b1aa56
+//NumPy reason failure
+_Python_NumPy_REASON_FAILURE:INTERNAL=
 
