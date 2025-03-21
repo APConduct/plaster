@@ -332,38 +332,6 @@ build _deps/glfw-build/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}_d
 # /Users/aidanjost/projects/plaster/CMakeLists.txt
 # =============================================================================
 
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target glad_gl
-
-
-#############################################
-# Order-only phony target for glad_gl
-
-build cmake_object_order_depends_target_glad_gl: phony || .
-
-build ext/CMakeFiles/glad_gl.dir/glad/src/gl.c.o: C_COMPILER__glad_gl_unscanned_Debug /Users/aidanjost/projects/plaster/ext/glad/src/gl.c || cmake_object_order_depends_target_glad_gl
-  DEP_FILE = ext/CMakeFiles/glad_gl.dir/glad/src/gl.c.o.d
-  FLAGS = -I/opt/homebrew/opt/llvm/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = ext/CMakeFiles/glad_gl.dir
-  OBJECT_FILE_DIR = ext/CMakeFiles/glad_gl.dir/glad/src
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target glad_gl
-
-
-#############################################
-# Link the static library ext/libglad_gl.a
-
-build ext/libglad_gl.a: C_STATIC_LIBRARY_LINKER__glad_gl_Debug ext/CMakeFiles/glad_gl.dir/glad/src/gl.c.o
-  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
-  LANGUAGE_COMPILE_FLAGS = -I/opt/homebrew/opt/llvm/include -g
-  OBJECT_DIR = ext/CMakeFiles/glad_gl.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = ext/libglad_gl.a
-  TARGET_PDB = glad_gl.a.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -399,13 +367,13 @@ build ext/rebuild_cache: phony ext/CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for plaster
 
-build cmake_object_order_depends_target_plaster: phony || cmake_object_order_depends_target_glad_gl cmake_object_order_depends_target_glfw
+build cmake_object_order_depends_target_plaster: phony || cmake_object_order_depends_target_glfw
 
 build src/CMakeFiles/plaster.dir/library.cpp.o.ddi: CXX_SCAN__plaster_Debug /Users/aidanjost/projects/plaster/src/library.cpp || cmake_object_order_depends_target_plaster
   DEP_FILE = src/CMakeFiles/plaster.dir/library.cpp.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = src/CMakeFiles/plaster.dir/library.cpp.o.ddi
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJ_FILE = src/CMakeFiles/plaster.dir/library.cpp.o
   PREPROCESSED_OUTPUT_FILE = src/CMakeFiles/plaster.dir/library.cpp.o.ddi.i
 
@@ -413,7 +381,7 @@ build src/CMakeFiles/plaster.dir/library.cpp.o: CXX_COMPILER__plaster_scanned_De
   DEP_FILE = src/CMakeFiles/plaster.dir/library.cpp.o.d
   DYNDEP_MODULE_MAP_FILE = src/CMakeFiles/plaster.dir/library.cpp.o.modmap
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJECT_DIR = src/CMakeFiles/plaster.dir
   OBJECT_FILE_DIR = src/CMakeFiles/plaster.dir
   dyndep = src/CMakeFiles/plaster.dir/CXX.dd
@@ -422,7 +390,7 @@ build src/CMakeFiles/plaster.dir/mod/core.ixx.o.ddi: CXX_SCAN__plaster_Debug /Us
   DEP_FILE = src/CMakeFiles/plaster.dir/mod/core.ixx.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = src/CMakeFiles/plaster.dir/mod/core.ixx.o.ddi
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJ_FILE = src/CMakeFiles/plaster.dir/mod/core.ixx.o
   PREPROCESSED_OUTPUT_FILE = src/CMakeFiles/plaster.dir/mod/core.ixx.o.ddi.i
 
@@ -430,7 +398,7 @@ build src/CMakeFiles/plaster.dir/mod/core.ixx.o: CXX_COMPILER__plaster_scanned_D
   DEP_FILE = src/CMakeFiles/plaster.dir/mod/core.ixx.o.d
   DYNDEP_MODULE_MAP_FILE = src/CMakeFiles/plaster.dir/mod/core.ixx.o.modmap
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJECT_DIR = src/CMakeFiles/plaster.dir
   OBJECT_FILE_DIR = src/CMakeFiles/plaster.dir/mod
   dyndep = src/CMakeFiles/plaster.dir/CXX.dd
@@ -439,7 +407,7 @@ build src/CMakeFiles/plaster.dir/mod/window.ixx.o.ddi: CXX_SCAN__plaster_Debug /
   DEP_FILE = src/CMakeFiles/plaster.dir/mod/window.ixx.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = src/CMakeFiles/plaster.dir/mod/window.ixx.o.ddi
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJ_FILE = src/CMakeFiles/plaster.dir/mod/window.ixx.o
   PREPROCESSED_OUTPUT_FILE = src/CMakeFiles/plaster.dir/mod/window.ixx.o.ddi.i
 
@@ -447,7 +415,7 @@ build src/CMakeFiles/plaster.dir/mod/window.ixx.o: CXX_COMPILER__plaster_scanned
   DEP_FILE = src/CMakeFiles/plaster.dir/mod/window.ixx.o.d
   DYNDEP_MODULE_MAP_FILE = src/CMakeFiles/plaster.dir/mod/window.ixx.o.modmap
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJECT_DIR = src/CMakeFiles/plaster.dir
   OBJECT_FILE_DIR = src/CMakeFiles/plaster.dir/mod
   dyndep = src/CMakeFiles/plaster.dir/CXX.dd
@@ -456,7 +424,7 @@ build src/CMakeFiles/plaster.dir/mod/event.ixx.o.ddi: CXX_SCAN__plaster_Debug /U
   DEP_FILE = src/CMakeFiles/plaster.dir/mod/event.ixx.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = src/CMakeFiles/plaster.dir/mod/event.ixx.o.ddi
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJ_FILE = src/CMakeFiles/plaster.dir/mod/event.ixx.o
   PREPROCESSED_OUTPUT_FILE = src/CMakeFiles/plaster.dir/mod/event.ixx.o.ddi.i
 
@@ -464,7 +432,7 @@ build src/CMakeFiles/plaster.dir/mod/event.ixx.o: CXX_COMPILER__plaster_scanned_
   DEP_FILE = src/CMakeFiles/plaster.dir/mod/event.ixx.o.d
   DYNDEP_MODULE_MAP_FILE = src/CMakeFiles/plaster.dir/mod/event.ixx.o.modmap
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJECT_DIR = src/CMakeFiles/plaster.dir
   OBJECT_FILE_DIR = src/CMakeFiles/plaster.dir/mod
   dyndep = src/CMakeFiles/plaster.dir/CXX.dd
@@ -473,7 +441,7 @@ build src/CMakeFiles/plaster.dir/mod/renderer.ixx.o.ddi: CXX_SCAN__plaster_Debug
   DEP_FILE = src/CMakeFiles/plaster.dir/mod/renderer.ixx.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = src/CMakeFiles/plaster.dir/mod/renderer.ixx.o.ddi
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJ_FILE = src/CMakeFiles/plaster.dir/mod/renderer.ixx.o
   PREPROCESSED_OUTPUT_FILE = src/CMakeFiles/plaster.dir/mod/renderer.ixx.o.ddi.i
 
@@ -481,7 +449,7 @@ build src/CMakeFiles/plaster.dir/mod/renderer.ixx.o: CXX_COMPILER__plaster_scann
   DEP_FILE = src/CMakeFiles/plaster.dir/mod/renderer.ixx.o.d
   DYNDEP_MODULE_MAP_FILE = src/CMakeFiles/plaster.dir/mod/renderer.ixx.o.modmap
   FLAGS = -I/opt/homebrew/opt/llvm/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/ext/glad/include -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include -I/glad -I/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include -isystem /opt/homebrew/include
   OBJECT_DIR = src/CMakeFiles/plaster.dir
   OBJECT_FILE_DIR = src/CMakeFiles/plaster.dir/mod
   dyndep = src/CMakeFiles/plaster.dir/CXX.dd
@@ -496,7 +464,7 @@ build src/CMakeFiles/plaster.dir/CXX.dd | /Users/aidanjost/projects/plaster/cmak
 #############################################
 # Link the static library src/libplaster.a
 
-build src/libplaster.a: CXX_STATIC_LIBRARY_LINKER__plaster_Debug src/CMakeFiles/plaster.dir/library.cpp.o src/CMakeFiles/plaster.dir/mod/core.ixx.o src/CMakeFiles/plaster.dir/mod/window.ixx.o src/CMakeFiles/plaster.dir/mod/event.ixx.o src/CMakeFiles/plaster.dir/mod/renderer.ixx.o || _deps/glfw-build/src/libglfw3.a ext/libglad_gl.a
+build src/libplaster.a: CXX_STATIC_LIBRARY_LINKER__plaster_Debug src/CMakeFiles/plaster.dir/library.cpp.o src/CMakeFiles/plaster.dir/mod/core.ixx.o src/CMakeFiles/plaster.dir/mod/window.ixx.o src/CMakeFiles/plaster.dir/mod/event.ixx.o src/CMakeFiles/plaster.dir/mod/renderer.ixx.o || _deps/glfw-build/src/libglfw3.a
   ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   LANGUAGE_COMPILE_FLAGS = -I/opt/homebrew/opt/llvm/include -g
   OBJECT_DIR = src/CMakeFiles/plaster.dir
@@ -559,11 +527,7 @@ build examples/rebuild_cache: phony examples/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build glad_gl: phony ext/libglad_gl.a
-
 build glfw: phony _deps/glfw-build/src/libglfw3.a
-
-build libglad_gl.a: phony ext/libglad_gl.a
 
 build libglfw3.a: phony _deps/glfw-build/src/libglfw3.a
 
@@ -609,7 +573,7 @@ build examples/all: phony
 #############################################
 # Folder: /Users/aidanjost/projects/plaster/cmake-build-debug/ext
 
-build ext/all: phony ext/libglad_gl.a
+build ext/all: phony
 
 # =============================================================================
 

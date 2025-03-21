@@ -52,13 +52,13 @@ endif()
 
 execute_process(
   COMMAND "/usr/bin/git"
-          checkout "v2.0.4" --
+          checkout "v2.0.8" --
   WORKING_DIRECTORY "/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'v2.0.4'")
+  message(FATAL_ERROR "Failed to checkout tag: 'v2.0.8'")
 endif()
 
 set(init_submodules TRUE)

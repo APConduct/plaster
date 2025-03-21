@@ -2,7 +2,6 @@
 -- glad found:  at: /Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src
 -- Including Cocoa support
 -- glm found: 1 at: /opt/homebrew/share/glm
--- glad_gl found:  at: /Users/aidanjost/projects/plaster/ext/glad/include
 -- Configuring done (0.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/aidanjost/projects/plaster/cmake-build-debug

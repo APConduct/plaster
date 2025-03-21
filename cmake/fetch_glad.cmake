@@ -6,7 +6,7 @@ include(FetchContent)
 FetchContent_Declare(
         glad
         GIT_REPOSITORY https://github.com/Dav1dde/glad.git
-        GIT_TAG v2.0.4
+        GIT_TAG v2.0.8
 )
 
 set(GLAD_API "gl=4.6" CACHE STRING "API type/version pairs, like \"gl=4.6,gles=\", no version means latest")
