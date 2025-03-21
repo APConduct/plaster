@@ -3,8 +3,6 @@
 //
 
 module;
-// #include <glad/glad.h> // doesn't work
-#include <glad/glad.h> // also doesn't work
 
 #include <string>
 #include <array>
@@ -13,6 +11,8 @@ module;
 #include <vector>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#define GLAD_GL_IMPLEMENTATION
+#include <glad/gl.h>
 
 
 
@@ -163,7 +163,8 @@ export namespace plaster::renderer
     public:
         VertexArray()
         {
-            // glGenVertexArrays(1, &renderer_id_);
+            glGen(1, &renderer_id_); // doesnt want to work
+
         }
 
     };

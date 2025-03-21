@@ -430,6 +430,9 @@
 			"path" : "cmake-build-debug/_deps/glfw-src/CMake/glfw3.pc.in"
 		},
 		{
+			"path" : "ext/CMakeLists.txt"
+		},
+		{
 			"path" : "src/CMakeLists.txt"
 		},
 		{

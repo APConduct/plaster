@@ -17,7 +17,7 @@ target_sources(plaster
 )
 
 target_link_libraries(plaster PUBLIC
-        glad
+        glad_gl
         glfw
 
         glm::glm
@@ -27,6 +27,7 @@ target_include_directories(
         plaster
         PUBLIC
         ${glad_SOURCE_DIR}/include
+        ${glad_gl_INCLUDE_DIR}/glad
 )
 
 

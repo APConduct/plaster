@@ -1079,7 +1079,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "6"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -2360,6 +2360,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/aidanjost/projects/plaster/examples"
+		},
+		{
+			"name" : "plaster_externals_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/aidanjost/projects/plaster/cmake-build-debug/ext"
+		},
+		{
+			"name" : "plaster_externals_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "plaster_externals_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/aidanjost/projects/plaster/ext"
 		},
 		{
 			"name" : "plaster_lib_BINARY_DIR",

@@ -6,6 +6,9 @@
 /Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
 /Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build/src/CMakeFiles/edit_cache.dir
 /Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-build/src/CMakeFiles/rebuild_cache.dir
+/Users/aidanjost/projects/plaster/cmake-build-debug/ext/CMakeFiles/glad_gl.dir
+/Users/aidanjost/projects/plaster/cmake-build-debug/ext/CMakeFiles/edit_cache.dir
+/Users/aidanjost/projects/plaster/cmake-build-debug/ext/CMakeFiles/rebuild_cache.dir
 /Users/aidanjost/projects/plaster/cmake-build-debug/src/CMakeFiles/plaster.dir
 /Users/aidanjost/projects/plaster/cmake-build-debug/src/CMakeFiles/edit_cache.dir
 /Users/aidanjost/projects/plaster/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir

@@ -38,6 +38,7 @@ if (PLASTER_ENABLE_MARCO_POLO)
 endif ()
 
 
+add_subdirectory(ext)
 
 add_subdirectory(src)
 add_subdirectory(examples)

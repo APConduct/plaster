@@ -67,6 +67,14 @@
 					"path" : "/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glad-src/include"
 				},
 				{
+					"backtrace" : 3,
+					"path" : "/glad"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/aidanjost/projects/plaster/ext/glad/include"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "/Users/aidanjost/projects/plaster/cmake-build-debug/_deps/glfw-src/include"
 				},
@@ -100,6 +108,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "glfw::@fa9f4482d3a2b070f206"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "glad_gl::@a9f99adfd9f636cea434"
 		}
 	],
 	"fileSets" : 
