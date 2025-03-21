@@ -1,0 +1,2 @@
+project(plaster_externals)
+
