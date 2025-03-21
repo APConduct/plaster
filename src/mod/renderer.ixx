@@ -4,15 +4,16 @@
 
 module;
 
+
 #include <string>
+#include <iostream>
+#include <GLFW/glfw3.h>
 #include <array>
 #include <unordered_map>
 #include <glm/glm.hpp>
 #include <vector>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#define GLAD_GL_IMPLEMENTATION
-#include <glad/gl.h>
 
 
 
@@ -150,6 +151,29 @@ export namespace plaster::renderer
         void set_data(const void* data, uint32_t size);
     };
 
+    bool init_gl_functions()
+    {
+        static bool initialized = false;
+        if (!initialized) {
+            // Make sure we have a current OpenGL context
+            if (!glfwGetCurrentContext()) {
+                std::cerr << "Error: No current OpenGL context when initializing GLAD" << std::endl;
+                return false;
+            }
+
+            // Initialize GLAD
+            // if (!gladLoadGL(glfwGetProcAddress)) {
+            //     std::cerr << "Failed to initialize GLAD" << std::endl;
+            //     return false;
+            // }
+
+            initialized = true;
+            std::cout << "GLAD initialized. OpenGL version: " << glGetString(GL_VERSION) << std::endl;
+        }
+        return true;
+
+    };
+
 
     class VertexArray
     {
@@ -163,7 +187,7 @@ export namespace plaster::renderer
     public:
         VertexArray()
         {
-            glGen(1, &renderer_id_); // doesnt want to work
+            // glGenVertexArrays(1, &renderer_id_); // doesnt want to work
 
         }
 
