@@ -19,7 +19,6 @@ target_sources(plaster
 target_link_libraries(plaster PUBLIC
         glad_gl
         glfw
-
         glm::glm
 )
 
