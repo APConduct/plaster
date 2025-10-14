@@ -1,0 +1,22 @@
+# ninja log v7
+2	53	1760260020183021266	CMakeFiles/plaster.dir/src/input/input_manager.cpp.o.ddi	6bea9a8c85c85bd1
+2	58	1760260020183147100	CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o.ddi	91fe20a3bccfe95a
+4	78	1760286237937504919	CMakeFiles/plaster.dir/src/core/ui_engine.cpp.o.ddi	abd1426556fcde11
+4	82	1760286166061688698	CMakeFiles/plaster.dir/src/core/renderer.cpp.o.ddi	8f7a85edb21eb3b
+78	87	1760286238011323549	CMakeFiles/plaster.dir/CXX.dd	281f6ab29989fd70
+78	87	1760286238011323549	CMakeFiles/plaster.dir/CXXModules.json	281f6ab29989fd70
+78	87	1760286238011323549	CMakeFiles/plaster.dir/src/core/renderer.cpp.o.modmap	281f6ab29989fd70
+78	87	1760286238011323549	CMakeFiles/plaster.dir/src/core/ui_engine.cpp.o.modmap	281f6ab29989fd70
+78	87	1760286238011323549	CMakeFiles/plaster.dir/src/input/input_manager.cpp.o.modmap	281f6ab29989fd70
+78	87	1760286238011323549	CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o.modmap	281f6ab29989fd70
+113	150	1760260020294218611	CMakeFiles/plaster.dir/src/input/input_manager.cpp.o	88454fb923008b20
+113	156	1760260020294344069	CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o	34c8fb5616542bbd
+92	465	1760286166148816488	CMakeFiles/plaster.dir/src/core/renderer.cpp.o	6165b45dda469d5b
+88	436	1760286238020793919	CMakeFiles/plaster.dir/src/core/ui_engine.cpp.o	47c068bcf4700d69
+436	489	1760286238369667871	libplaster.a	828ca57688846870
+6	16	1760408868332112963	CMakeFiles/plaster.dir/CXX.dd	281f6ab29989fd70
+6	16	1760408868332112963	CMakeFiles/plaster.dir/CXXModules.json	281f6ab29989fd70
+6	16	1760408868332112963	CMakeFiles/plaster.dir/src/core/renderer.cpp.o.modmap	281f6ab29989fd70
+6	16	1760408868332112963	CMakeFiles/plaster.dir/src/core/ui_engine.cpp.o.modmap	281f6ab29989fd70
+6	16	1760408868332112963	CMakeFiles/plaster.dir/src/input/input_manager.cpp.o.modmap	281f6ab29989fd70
+6	16	1760408868332112963	CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o.modmap	281f6ab29989fd70

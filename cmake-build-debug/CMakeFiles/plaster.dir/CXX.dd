@@ -1,0 +1,9 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/plaster.dir/src/core/renderer.cpp.o: dyndep
+
+build CMakeFiles/plaster.dir/src/core/ui_engine.cpp.o: dyndep
+
+build CMakeFiles/plaster.dir/src/input/input_manager.cpp.o: dyndep
+
+build CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o: dyndep
+

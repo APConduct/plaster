@@ -1,0 +1,9 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/plaster.dir/src/core/renderer.cpp.o"
+    }
+  ],
+  "version": 1
+}

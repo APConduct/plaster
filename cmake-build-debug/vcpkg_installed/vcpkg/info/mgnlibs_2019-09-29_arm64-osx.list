@@ -1,0 +1,17 @@
+arm64-osx/
+arm64-osx/include/
+arm64-osx/include/mgnlibs/
+arm64-osx/include/mgnlibs/app.h
+arm64-osx/include/mgnlibs/assetsys.h
+arm64-osx/include/mgnlibs/hashtable.h
+arm64-osx/include/mgnlibs/http.h
+arm64-osx/include/mgnlibs/ini.h
+arm64-osx/include/mgnlibs/rnd.h
+arm64-osx/include/mgnlibs/strpool.h
+arm64-osx/include/mgnlibs/sysfont.h
+arm64-osx/include/mgnlibs/thread.h
+arm64-osx/share/
+arm64-osx/share/mgnlibs/
+arm64-osx/share/mgnlibs/copyright
+arm64-osx/share/mgnlibs/vcpkg.spdx.json
+arm64-osx/share/mgnlibs/vcpkg_abi_info.txt
