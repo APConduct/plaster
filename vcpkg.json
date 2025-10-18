@@ -2,5 +2,5 @@
   "name": "veldgui",
   "version": "0.1.0",
   "description": "VeldGUI - A lightweight, cross-platform hybrid-mode GUI library",
-  "dependencies": ["glfw3", "bgfx", "lua", "glm"]
+  "dependencies": ["glfw3", "bgfx", "lua", "glm", "raylib"]
 }

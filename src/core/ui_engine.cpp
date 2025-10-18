@@ -9,9 +9,7 @@
 namespace plaster {
 ui::Engine::Engine(Renderer* renderer, input::Manager* input) : renderer(renderer), input(input) {}
 
-void ui::Engine::update(float dt) {
-    // update_input();
-}
+void ui::Engine::update(float dt) { update_input(); }
 
 void ui::Engine::render() {
     renderer->begin_frame();

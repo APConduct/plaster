@@ -116,3 +116,79 @@ Abi: f646e2a846d0303c1685f35be1836f985c3e41af99e5c9cc34ba9a852de15c67
 Description: A powerful, fast, lightweight, embeddable scripting language
 Status: install ok installed
 
+Package: qoi
+Version: 2023-08-10
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 8eda7caa98de9297a0806ae5ed3e86d7cda1e511b79feb4d60d588585af2e8f4
+Description: The Quite OK Image Format for fast, lossless image compression
+Status: install ok installed
+
+Package: nanosvg
+Version: 2023-12-29
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: aef69d1c5ed61fe3cbca40ea3a2d9c5c16e6c00de6fb3f96d3876435b166d778
+Description: NanoSVG is a simple stupid single-header-file SVG parser. It is accompanied by a simple SVG rasterizer.
+Status: install ok installed
+
+Package: mmx
+Version: 2025-03-19
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: d47c10fc3bb2f829ceb176db479c3f33a211a5fd01cd7392c2b1e891553903cc
+Description: Single header libraries for C/C++
+Status: install ok installed
+
+Package: dirent
+Version: 1.26
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 2ecfc8f6a530e7f8691e8810b74021dd05ee255df86e41211757a1bda9fa202f
+Description: Dirent is a C/C++ programming interface that allows programmers to retrieve information about files and directories under Linux/UNIX. This project provides Linux compatible Dirent interface for Microsoft Windows.
+Status: install ok installed
+
+Package: cgltf
+Version: 1.14
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: e82ad8a334fa5e2f4ec5f6ac9eca69dd1401276c926a6b0ba271ee50a65748b0
+Description: Single-file glTF 2.0 loader and writer written in C99
+Status: install ok installed
+
+Package: miniaudio
+Version: 0.11.23
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: b637ad5fd259f1be7265dffa012cdd664e42942a09762343a643fc935d9d865a
+Description: Audio playback and capture library written in C, in a single source file
+Status: install ok installed
+
+Package: drlibs
+Version: 2025-09-10
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 5a062b6f326921cd5f96c7fcb2fb978a5275bbab8f58dc1b26f0021241acabae
+Description: Single-file audio decoding libraries for C/C++
+Status: install ok installed
+
+Package: raylib
+Version: 5.5
+Port-Version: 1
+Depends: cgltf, dirent, glfw3, mmx, nanosvg, qoi, stb, vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: e4246816a7e21da1531bd2d47f6339b7934f0d20092649d881d7607e4387a937
+Description: A simple and easy-to-use library to enjoy videogames programming
+Default-Features: audio
+Status: install ok installed
+
+Package: raylib
+Feature: audio
+Depends: drlibs, miniaudio
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Build audio module
+Status: install ok installed
+
