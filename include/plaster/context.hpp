@@ -83,9 +83,12 @@ struct Context {
 
 private:
     Context() = default;
-    ui::Context& operator=(const ui::Context& other) = delete;
+    ~Context() = default;
+    Context(const Context&) = delete;
+    Context& operator=(const Context&) = delete;
 
     glm::vec2 cursor_pos;
+    context::Style current_style;
 
     struct ContainerState {
         std::string id;
