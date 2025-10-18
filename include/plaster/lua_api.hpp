@@ -22,6 +22,7 @@ private:
     lua_State* L;
     ui::Engine* engine;
 
+public:
     static LuaAPI* get_instance(lua_State* L);
 };
 

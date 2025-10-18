@@ -18,7 +18,8 @@ target_sources(plaster
       src/core/renderer.cpp
       src/core/ui_engine.cpp
       src/input/input_manager.cpp
-      src/lua/lua_bindings.cpp)
+      src/lua/lua_bindings.cpp
+      src/input/input_manager.cpp)
 
 target_include_directories(plaster
     PUBLIC

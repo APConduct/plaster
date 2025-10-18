@@ -1,7 +1,7 @@
 Detecting compiler hash for triplet arm64-osx...
 Compiler found: /opt/homebrew/opt/llvm/bin/clang++
 All requested packages are currently installed.
-Total install time: 79.3 us
+Total install time: 85.1 us
 bgfx provides CMake targets:
 
   # this is heuristically generated, and may not be correct

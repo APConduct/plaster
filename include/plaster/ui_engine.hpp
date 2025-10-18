@@ -6,14 +6,12 @@
 #include <glm/glm.hpp>
 #include <map>
 #include <string>
+#include "plaster/input_manager.hpp"
+
 
 namespace plaster {
 struct Renderer;
 
-namespace input {
-struct Manager;
-}
-struct InputManager;
 
 namespace ui {
 struct Element {
@@ -48,6 +46,9 @@ struct Element {
     // void onclick(std::function<F(T)> func) {
     //     func();
     // }
+    //
+
+    glm::vec2 get_mouse_pos() const;
 
     template <typename T, typename FT>
     T on_(FT&& func) {
@@ -69,13 +70,13 @@ public:
     void update(float dt);
     void render();
 
-    bool button(const std::string& id, glm::vec2 pos, glm::vec2 size, const std::string& label) {
-        bool checkbox(const std::string& id, glm::vec2 pos, bool* value, const std::string& label);
-        void panel(const std::string& id, glm::vec2 pos, glm::vec2 size, uint32_t color);
-        void text(glm::vec2 pos, const std::string& text, uint32_t color, float scale = 1.0f);
+    bool button(const std::string& id, glm::vec2 pos, glm::vec2 size, const std::string& label);
 
-        State get_state();
-    }
+    bool checkbox(const std::string& id, glm::vec2 pos, bool* value, const std::string& label);
+    void panel(const std::string& id, glm::vec2 pos, glm::vec2 size, uint32_t color);
+    void text(glm::vec2 pos, const std::string& text, uint32_t color, float scale = 1.0f);
+
+    State get_state() const { return state; }
 
 private:
     Renderer* renderer;

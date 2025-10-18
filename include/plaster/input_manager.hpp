@@ -2,7 +2,7 @@
 #include <array>
 #include <glm/glm.hpp>
 
-namespace veldgui {
+namespace plaster {
 
 namespace input {
 class Manager {
@@ -30,4 +30,4 @@ private:
 };
 } // namespace input
 
-} // namespace veldgui
+} // namespace plaster
