@@ -82,6 +82,12 @@ target_sources(plaster
       src/lua/lua_bindings.cpp
       src/input/input_manager.cpp)
 
+target_sources(plaster
+    PUBLIC
+        FILE_SET CXX_MODULES
+        FILES
+        include/modules/flat/point.ixx)
+
 target_include_directories(plaster
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
