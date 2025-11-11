@@ -6,42 +6,42 @@
 	"config" : "Debug",
 	"cxx-modules" : {},
 	"database-info" : null,
-	"dir-cur-bld" : "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug",
-	"dir-cur-src" : "/Users/aidanjost/projects/cpp_place/plaster",
-	"dir-top-bld" : "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug",
-	"dir-top-src" : "/Users/aidanjost/projects/cpp_place/plaster",
+	"dir-cur-bld" : "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+	"dir-cur-src" : "C:/msys64/home/aidan/projects/CppPlace/plaster",
+	"dir-top-bld" : "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+	"dir-top-src" : "C:/msys64/home/aidan/projects/CppPlace/plaster",
 	"exports" : [],
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : 
 	[
-		"/Users/aidanjost/projects/cpp_place/plaster/include",
-		"/Users/aidanjost/projects/cpp_place/plaster/src",
-		"vcpkg_installed/arm64-osx/include"
+		"C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include",
+		"C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\src",
+		"_deps\\bgfx-src\\include"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],
-	"module-dir" : "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/plaster.dir",
+	"module-dir" : "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir",
 	"sources" : 
 	{
-		"CMakeFiles/plaster.dir/src/core/renderer.cpp.o" : 
+		"CMakeFiles/plaster.dir/src/core/renderer.cpp.obj" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/aidanjost/projects/cpp_place/plaster/src/core/renderer.cpp"
+			"source" : "C:/msys64/home/aidan/projects/CppPlace/plaster/src/core/renderer.cpp"
 		},
-		"CMakeFiles/plaster.dir/src/core/ui_engine.cpp.o" : 
+		"CMakeFiles/plaster.dir/src/core/ui_engine.cpp.obj" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/aidanjost/projects/cpp_place/plaster/src/core/ui_engine.cpp"
+			"source" : "C:/msys64/home/aidan/projects/CppPlace/plaster/src/core/ui_engine.cpp"
 		},
-		"CMakeFiles/plaster.dir/src/input/input_manager.cpp.o" : 
+		"CMakeFiles/plaster.dir/src/input/input_manager.cpp.obj" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/aidanjost/projects/cpp_place/plaster/src/input/input_manager.cpp"
+			"source" : "C:/msys64/home/aidan/projects/CppPlace/plaster/src/input/input_manager.cpp"
 		},
-		"CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o" : 
+		"CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.obj" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/aidanjost/projects/cpp_place/plaster/src/lua/lua_bindings.cpp"
+			"source" : "C:/msys64/home/aidan/projects/CppPlace/plaster/src/lua/lua_bindings.cpp"
 		}
 	}
 }

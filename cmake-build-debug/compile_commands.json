@@ -1,26 +1,26 @@
 [
 {
-  "directory": "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug",
-  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DLUA_USE_DLOPEN -I/Users/aidanjost/projects/cpp_place/plaster/include -I/Users/aidanjost/projects/cpp_place/plaster/src -isystem /Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/vcpkg_installed/arm64-osx/include -Wall -Wextra -Wshadow -Wpedantic -Wno-variadic-macros -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -g -std=c++23 -arch arm64 @CMakeFiles/plaster.dir/src/core/renderer.cpp.o.modmap -o CMakeFiles/plaster.dir/src/core/renderer.cpp.o -c /Users/aidanjost/projects/cpp_place/plaster/src/core/renderer.cpp",
-  "file": "/Users/aidanjost/projects/cpp_place/plaster/src/core/renderer.cpp",
-  "output": "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/plaster.dir/src/core/renderer.cpp.o"
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\src\\core\\renderer.cpp.obj.modmap -o CMakeFiles\\plaster.dir\\src\\core\\renderer.cpp.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\src\\core\\renderer.cpp",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/src/core/renderer.cpp",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/src/core/renderer.cpp.obj"
 },
 {
-  "directory": "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug",
-  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DLUA_USE_DLOPEN -I/Users/aidanjost/projects/cpp_place/plaster/include -I/Users/aidanjost/projects/cpp_place/plaster/src -isystem /Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/vcpkg_installed/arm64-osx/include -Wall -Wextra -Wshadow -Wpedantic -Wno-variadic-macros -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -g -std=c++23 -arch arm64 @CMakeFiles/plaster.dir/src/core/ui_engine.cpp.o.modmap -o CMakeFiles/plaster.dir/src/core/ui_engine.cpp.o -c /Users/aidanjost/projects/cpp_place/plaster/src/core/ui_engine.cpp",
-  "file": "/Users/aidanjost/projects/cpp_place/plaster/src/core/ui_engine.cpp",
-  "output": "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/plaster.dir/src/core/ui_engine.cpp.o"
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\src\\core\\ui_engine.cpp.obj.modmap -o CMakeFiles\\plaster.dir\\src\\core\\ui_engine.cpp.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\src\\core\\ui_engine.cpp",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/src/core/ui_engine.cpp",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/src/core/ui_engine.cpp.obj"
 },
 {
-  "directory": "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug",
-  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DLUA_USE_DLOPEN -I/Users/aidanjost/projects/cpp_place/plaster/include -I/Users/aidanjost/projects/cpp_place/plaster/src -isystem /Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/vcpkg_installed/arm64-osx/include -Wall -Wextra -Wshadow -Wpedantic -Wno-variadic-macros -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -g -std=c++23 -arch arm64 @CMakeFiles/plaster.dir/src/input/input_manager.cpp.o.modmap -o CMakeFiles/plaster.dir/src/input/input_manager.cpp.o -c /Users/aidanjost/projects/cpp_place/plaster/src/input/input_manager.cpp",
-  "file": "/Users/aidanjost/projects/cpp_place/plaster/src/input/input_manager.cpp",
-  "output": "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/plaster.dir/src/input/input_manager.cpp.o"
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\src\\input\\input_manager.cpp.obj.modmap -o CMakeFiles\\plaster.dir\\src\\input\\input_manager.cpp.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\src\\input\\input_manager.cpp",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/src/input/input_manager.cpp",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/src/input/input_manager.cpp.obj"
 },
 {
-  "directory": "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug",
-  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DLUA_USE_DLOPEN -I/Users/aidanjost/projects/cpp_place/plaster/include -I/Users/aidanjost/projects/cpp_place/plaster/src -isystem /Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/vcpkg_installed/arm64-osx/include -Wall -Wextra -Wshadow -Wpedantic -Wno-variadic-macros -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -g -std=c++23 -arch arm64 @CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o.modmap -o CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o -c /Users/aidanjost/projects/cpp_place/plaster/src/lua/lua_bindings.cpp",
-  "file": "/Users/aidanjost/projects/cpp_place/plaster/src/lua/lua_bindings.cpp",
-  "output": "/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o"
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\src\\lua\\lua_bindings.cpp.obj.modmap -o CMakeFiles\\plaster.dir\\src\\lua\\lua_bindings.cpp.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\src\\lua\\lua_bindings.cpp",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/src/lua/lua_bindings.cpp",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.obj"
 }
 ]

@@ -1,7 +1,7 @@
-/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/plaster.dir
-/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/list_install_components.dir
-/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/install.dir
-/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/install/local.dir
-/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/CMakeFiles/install/strip.dir
+C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir
+C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/list_install_components.dir
+C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/install.dir
+C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/install/local.dir
+C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/install/strip.dir

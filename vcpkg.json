@@ -2,5 +2,14 @@
   "name": "veldgui",
   "version": "0.1.0",
   "description": "VeldGUI - A lightweight, cross-platform hybrid-mode GUI library",
-  "dependencies": ["glfw3", "bgfx", "lua", "glm", "raylib"]
+  "dependencies": [
+    "glfw3",
+    "lua",
+    "glm",
+    {
+      "name": "raylib",
+      "features": ["audio"]
+    }
+  ],
+  "builtin-baseline": "4db164a3fa24910f1a13f21348e2510eb1f78605"
 }

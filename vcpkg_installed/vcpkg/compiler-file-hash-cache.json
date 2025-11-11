@@ -1,14 +1,8 @@
 {
-  "/opt/homebrew/opt/llvm/bin/clang" : 
+  "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe" : 
   {
-    "hash" : "f6b76669748f58313fa4c7d877b8b3633997232c",
-    "size" : 155416,
-    "timestamp" : 1759841602
-  },
-  "/opt/homebrew/opt/llvm/bin/clang++" : 
-  {
-    "hash" : "f6b76669748f58313fa4c7d877b8b3633997232c",
-    "size" : 155416,
-    "timestamp" : 1759841602
+    "hash" : "3dff6bacbb9125b1bbe9bec60009d3a5c01544f0",
+    "size" : 677496,
+    "timestamp" : 1751998094
   }
 }

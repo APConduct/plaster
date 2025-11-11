@@ -1,9 +1,0 @@
-{
-  "revision": 0,
-  "rules": [
-    {
-      "primary-output": "CMakeFiles/plaster.dir/src/lua/lua_bindings.cpp.o"
-    }
-  ],
-  "version": 1
-}

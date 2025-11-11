@@ -16,7 +16,7 @@
 
 rule CXX_SCAN__plaster_Debug
   depfile = $DEP_FILE
-  command = "/opt/homebrew/Cellar/llvm/21.1.3/bin/clang-scan-deps" -format=p1689 -- /opt/homebrew/opt/llvm/bin/clang++ $DEFINES $INCLUDES $FLAGS -x c++ $in -c -o $OBJ_FILE -resource-dir "/opt/homebrew/Cellar/llvm/21.1.3/lib/clang/21" -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE > $DYNDEP_INTERMEDIATE_FILE.tmp && mv $DYNDEP_INTERMEDIATE_FILE.tmp $DYNDEP_INTERMEDIATE_FILE
+  command = C:\Windows\system32\cmd.exe /C ""C:/msys64/ucrt64/bin/clang-scan-deps.exe" -format=p1689 -- C:\msys64\ucrt64\bin\clang++.exe $DEFINES $INCLUDES $FLAGS -x c++ $in -c -o $OBJ_FILE -resource-dir "C:/msys64/ucrt64/lib/clang/21" -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE > $DYNDEP_INTERMEDIATE_FILE.tmp && "C:/msys64/ucrt64/bin/cmake.exe" -E rename $DYNDEP_INTERMEDIATE_FILE.tmp $DYNDEP_INTERMEDIATE_FILE"
   description = Scanning $in for CXX dependencies
 
 
@@ -24,7 +24,7 @@ rule CXX_SCAN__plaster_Debug
 # Rule to generate ninja dyndep files for CXX.
 
 rule CXX_DYNDEP__plaster_Debug
-  command = /opt/homebrew/bin/cmake -E cmake_ninja_dyndep --tdi=CMakeFiles/plaster.dir/CXXDependInfo.json --lang=CXX --modmapfmt=clang --dd=$out @$out.rsp
+  command = C:\msys64\ucrt64\bin\cmake.exe -E cmake_ninja_dyndep --tdi=CMakeFiles\plaster.dir\CXXDependInfo.json --lang=CXX --modmapfmt=clang --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
   rspfile_content = $in
@@ -37,7 +37,7 @@ rule CXX_DYNDEP__plaster_Debug
 rule CXX_COMPILER__plaster_scanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/opt/llvm/bin/clang++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE @$DYNDEP_MODULE_MAP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\clang++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE @$DYNDEP_MODULE_MAP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -47,7 +47,7 @@ rule CXX_COMPILER__plaster_scanned_Debug
 rule CXX_COMPILER__plaster_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/opt/llvm/bin/clang++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\clang++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -55,7 +55,7 @@ rule CXX_COMPILER__plaster_unscanned_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__plaster_Debug
-  command = $PRE_LINK && /opt/homebrew/bin/cmake -E rm -f $TARGET_FILE && /opt/local/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /opt/homebrew/opt/llvm/bin/llvm-ranlib $TARGET_FILE && /opt/homebrew/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\cmake.exe -E rm -f $TARGET_FILE && C:\msys64\ucrt64\bin\llvm-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\msys64\ucrt64\bin\llvm-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -72,7 +72,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/aidanjost/projects/cpp_place/plaster -B/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug
+  command = C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\msys64\home\aidan\projects\CppPlace\plaster -BC:\msys64\home\aidan\projects\CppPlace\plaster\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

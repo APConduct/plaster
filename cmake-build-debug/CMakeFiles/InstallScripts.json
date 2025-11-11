@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/aidanjost/projects/cpp_place/plaster/cmake-build-debug/cmake_install.cmake"
+		"C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
