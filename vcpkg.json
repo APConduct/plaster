@@ -8,7 +8,9 @@
     "glm",
     {
       "name": "raylib",
-      "features": ["audio"]
+      "features": [
+        "audio"
+      ]
     }
   ],
   "builtin-baseline": "4db164a3fa24910f1a13f21348e2510eb1f78605"
