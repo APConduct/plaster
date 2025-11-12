@@ -86,7 +86,12 @@ target_sources(plaster
     PUBLIC
         FILE_SET CXX_MODULES
         FILES
-        include/modules/flat/point.ixx)
+        include/modules/flat/point.ixx
+        include/modules/flat/size.ixx
+        include/modules/flat/flat.ixx
+        include/modules/plaster.ixx
+        include/modules/lua.ixx
+        include/modules/renderer.ixx)
 
 target_include_directories(plaster
     PUBLIC
@@ -135,6 +140,7 @@ endif()
 
 # bgfx (available through vcpkg or FetchContent)
 if(bgfx_FOUND OR USE_FETCHCONTENT_BGFX)
+    target_include_directories(plaster PRIVATE ${bgfx_SOURCE_DIR}/include)
     if(USE_FETCHCONTENT_BGFX)
         list(APPEND PLASTER_LIBS bgfx)
         message(STATUS "Using bgfx from FetchContent")

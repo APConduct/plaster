@@ -2,10 +2,8 @@
 #include <cstdint>
 #include <glm/fwd.hpp>
 #include <glm/glm.hpp>
-#include <memory>
 #include <stack>
 #include <string>
-#include <vector>
 #include "plaster/input_manager.hpp"
 #include "plaster/ui_engine.hpp"
 

@@ -5,7 +5,7 @@
 namespace plaster {
 
 namespace input {
-class Manager {
+struct Manager {
 public:
     Manager();
 
