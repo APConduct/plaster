@@ -55,8 +55,9 @@ struct State {
     std::string focused_element;
 };
 
+template <typename State = plaster::ui::State, typename Manager = input::Manager, typename Renderer = plaster::Renderer>
 struct Engine {
-    Engine(Renderer* renderer, input::Manager* input);
+    Engine(Renderer* renderer, Manager* input);
 
     virtual void update(float dt) { update_input(); };
     virtual void render() {

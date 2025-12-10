@@ -13,15 +13,17 @@ import plaster.context;
 
 export namespace plaster {
 namespace ui {
-struct EngineWithContext : public ui::Engine {
-    EngineWithContext(plaster::Renderer* renderer, input::Manager* input) : ui::Engine(renderer, input) {};
+template <typename State = plaster::ui::State, typename Manager = input::Manager, typename Renderer = plaster::Renderer>
+struct EngineWithContext : public ui::Engine<State, Manager, Renderer> {
+    EngineWithContext(plaster::Renderer* renderer, Manager* input) :
+        ui::Engine<State, Manager, Renderer>(renderer, input) {};
 
     void update(float dt) override {
         ui::Context::current().frame_begin(this->renderer, this->input, this);
-        ui::Engine::update(dt);
+        ui::Engine<State, Manager, Renderer>::update(dt);
     };
     void render() override {
-        ui::Engine::render();
+        ui::Engine<State, Manager, Renderer>::render();
         ui::Context::current().frame_end();
     };
 

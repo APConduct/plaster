@@ -44,7 +44,7 @@ struct Context {
         return instance;
     }
 
-    void frame_begin(Renderer* renderer, input::Manager* input, plaster::ui::Engine* engine) {
+    void frame_begin(Renderer* renderer, input::Manager* input, plaster::ui::Engine<>* engine) {
         this->renderer_ = renderer;
         this->input_ = input;
         this->engine_ = engine;
@@ -156,7 +156,7 @@ struct Context {
 
     Renderer* get_renderer() const { return renderer_; }
     input::Manager* get_input_manager() const { return input_; }
-    plaster::ui::Engine* get_engine() const { return engine_; }
+    plaster::ui::Engine<>* get_engine() const { return engine_; }
 
     bool is_mouse_over(glm::vec4 rect) const {
         if (!this->input_) {
@@ -202,7 +202,7 @@ private:
 
     Renderer* renderer_{};
     input::Manager* input_{};
-    plaster::ui::Engine* engine_{};
+    plaster::ui::Engine<>* engine_{};
 };
 } // namespace ui
 

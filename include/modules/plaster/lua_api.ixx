@@ -15,7 +15,7 @@ const char* PLASTER_METATABLE = "plaster_instance";
 
 
 struct API {
-    API(lua_State* L, ui::Engine* engine) : L(L), engine(engine) {
+    API(lua_State* L, ui::Engine<>* engine) : L(L), engine(engine) {
         lua_pushlightuserdata(L, this);
         lua_setfield(L, LUA_REGISTRYINDEX, PLASTER_METATABLE);
         register_functions();
@@ -108,7 +108,7 @@ struct API {
 
 private:
     lua_State* L;
-    ui::Engine* engine;
+    ui::Engine<>* engine;
 
 public:
     static lua::API* get_instance(lua_State* L) {
