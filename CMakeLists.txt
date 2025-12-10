@@ -8,6 +8,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # 1) Create the target first, then configure it
 add_library(plaster STATIC)
+# Ensure consumers inherit the minimum C++23 standard
+target_compile_features(plaster INTERFACE cxx_std_23)
 
 # 2) Add sources/modules
 target_sources(plaster
