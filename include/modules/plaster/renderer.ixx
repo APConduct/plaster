@@ -24,18 +24,18 @@ const char* fs_color_quad = R"(
         )";
 
 struct Vertex {
-    glm::vec2 pos;
-    uint32_t color;
-    glm::vec2 uv;
+    glm::vec2 pos{};
+    uint32_t color{};
+    glm::vec2 uv{};
 };
 
 namespace draw {
 struct Command {
-    uint32_t vertex_offset;
-    uint32_t vertex_count;
-    uint32_t index_offset;
-    uint32_t index_count;
-    bgfx::TextureHandle texture;
+    uint32_t vertex_offset{};
+    uint32_t vertex_count{};
+    uint32_t index_offset{};
+    uint32_t index_count{};
+    bgfx::TextureHandle texture{};
 };
 } // namespace draw
 
