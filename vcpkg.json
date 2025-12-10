@@ -6,6 +6,7 @@
     "glfw3",
     "lua",
     "glm",
+    "bgfx",
     {
       "name": "raylib",
       "features": [

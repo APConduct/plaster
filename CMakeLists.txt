@@ -80,7 +80,18 @@ target_sources(plaster
       src/core/ui_engine.cpp
       src/input/input_manager.cpp
       src/lua/lua_bindings.cpp
-      src/input/input_manager.cpp)
+      src/input/input_manager.cpp
+      PUBLIC
+      FILE_SET CXX_MODULES
+      FILES
+      include/modules/point.ixx
+      include/modules/plaster/renderer.ixx
+      include/modules/plaster/ui_engine.ixx
+      include/modules/plaster/input_manager.ixx
+      include/modules/plaster/lua_api.ixx
+      include/modules/plaster/context.ixx
+      include/modules/plaster/ui_engine_context.ixx
+)
 
 target_sources(plaster
     PUBLIC
