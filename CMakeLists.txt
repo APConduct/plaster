@@ -75,12 +75,7 @@ endif()
 add_library(plaster STATIC)
 
 target_sources(plaster
-   PRIVATE
-      src/core/renderer.cpp
-      src/core/ui_engine.cpp
-      src/input/input_manager.cpp
-      src/lua/lua_bindings.cpp
-      src/input/input_manager.cpp
+
       PUBLIC
       FILE_SET CXX_MODULES
       FILES

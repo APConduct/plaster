@@ -82,7 +82,6 @@ struct Renderer {
 
     void push_rect_outline(glm::vec2 pos, glm::vec2 size, uint32_t color, float thickness) {
         float t = thickness / 2.0f;
-
         // Top
         push_quad(pos, {size.x, thickness}, color);
         // Bottom
@@ -121,8 +120,8 @@ private:
             return;
         }
 
-        bgfx::TransientVertexBuffer tvb;
-        bgfx::TransientIndexBuffer tib;
+        bgfx::TransientVertexBuffer tvb{};
+        bgfx::TransientIndexBuffer tib{};
 
         // TODO: Implement vertex buffer allocation with proper vertex layout
         // bgfx::allocTransientVertexBuffer(&tvb, vertices.size(), vertex_layout);

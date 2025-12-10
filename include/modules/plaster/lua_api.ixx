@@ -107,8 +107,8 @@ struct API {
     };
 
 private:
-    lua_State* L;
-    ui::Engine<>* engine;
+    lua_State* L{};
+    ui::Engine<>* engine{};
 
 public:
     static lua::API* get_instance(lua_State* L) {

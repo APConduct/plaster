@@ -8,13 +8,14 @@ export namespace plaster::flat {
  * @brief A template class representing a 2D point with arithmetic operations.
  * @tparam T The type of the coordinates, must be an arithmetic type.
  */
-template <typename T> requires std::is_arithmetic_v<T>
+template <typename T>
+    requires std::is_arithmetic_v<T>
 struct Point final {
     static_assert(std::is_arithmetic_v<T>, "Point must be of an arithmetic type");
 
 protected:
-    T x_; ///< The x-coordinate of the point.
-    T y_; ///< The y-coordinate of the point.
+    T x_{}; ///< The x-coordinate of the point.
+    T y_{}; ///< The y-coordinate of the point.
 
 public:
     /**
