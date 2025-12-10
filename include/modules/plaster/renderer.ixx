@@ -2,7 +2,6 @@ module;
 
 #include <bgfx/bgfx.h>
 #include <cstdint>
-#include <glm/fwd.hpp>
 #include <glm/glm.hpp>
 
 export module plaster.renderer;

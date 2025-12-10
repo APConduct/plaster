@@ -84,25 +84,19 @@ target_sources(plaster
       PUBLIC
       FILE_SET CXX_MODULES
       FILES
-      include/modules/point.ixx
+      include/modules/flat/point.ixx
       include/modules/plaster/renderer.ixx
       include/modules/plaster/ui_engine.ixx
       include/modules/plaster/input_manager.ixx
       include/modules/plaster/lua_api.ixx
       include/modules/plaster/context.ixx
       include/modules/plaster/ui_engine_context.ixx
+      include/modules/flat/size.ixx
+      include/modules/flat/flat.ixx
+      include/modules/plaster.ixx
 )
 
-target_sources(plaster
-    PUBLIC
-        FILE_SET CXX_MODULES
-        FILES
-        include/modules/flat/point.ixx
-        include/modules/flat/size.ixx
-        include/modules/flat/flat.ixx
-        include/modules/plaster.ixx
-        include/modules/lua.ixx
-        include/modules/renderer.ixx)
+
 
 target_include_directories(plaster
     PUBLIC
