@@ -197,11 +197,9 @@ if [ -z "$VCPKG_TOOLCHAIN" ]; then
     echo "Warning: vcpkg toolchain file not found. Building without vcpkg..."
     echo "Searched in common locations. Set VCPKG_ROOT environment variable if needed."
 else
-    # Prefer vcpkg for all dependencies on Windows when available
-    if [ "$OS" = "windows" ]; then
+    # Only override to vcpkg if we haven't already decided on MSYS2/hybrid approach
+    if [ "$OS" = "windows" ] && [ "$USE_MSYS2_PACKAGES" != true ] && [ "$USE_HYBRID_APPROACH" != true ]; then
         echo "Windows: using vcpkg for all dependencies"
-        USE_MSYS2_PACKAGES=false
-        USE_HYBRID_APPROACH=false
         USE_FETCHCONTENT_BGFX=false
         CMAKE_GENERATOR="${CMAKE_GENERATOR:-Ninja}"
         CMAKE_MAKE_PROGRAM="${CMAKE_MAKE_PROGRAM:-ninja}"

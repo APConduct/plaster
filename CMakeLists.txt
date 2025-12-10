@@ -80,7 +80,7 @@ if(USE_FETCHCONTENT_BGFX)
     include(FetchContent)
     FetchContent_Declare(
         bgfx
-        GIT_REPOSITORY https://github.com/bkaradzic/bgfx.git
+        GIT_REPOSITORY https://github.com/bkaradzic/bgfx.cmake.git
         GIT_TAG master
         GIT_SHALLOW TRUE
     )
@@ -89,8 +89,7 @@ if(USE_FETCHCONTENT_BGFX)
     set(BGFX_INSTALL OFF CACHE BOOL "" FORCE)
     FetchContent_MakeAvailable(bgfx)
 
-    # FetchContent build typically exposes a target named 'bgfx'
-    target_include_directories(plaster PRIVATE ${bgfx_SOURCE_DIR}/include)
+    # bgfx.cmake exposes target 'bgfx'
     target_link_libraries(plaster PUBLIC bgfx)
 
 elseif(bgfx_FOUND)
@@ -103,7 +102,7 @@ else()
     include(FetchContent)
     FetchContent_Declare(
         bgfx
-        GIT_REPOSITORY https://github.com/bkaradzic/bgfx.git
+        GIT_REPOSITORY https://github.com/bkaradzic/bgfx.cmake.git
         GIT_TAG master
         GIT_SHALLOW TRUE
     )
@@ -112,7 +111,6 @@ else()
     set(BGFX_INSTALL OFF CACHE BOOL "" FORCE)
     FetchContent_MakeAvailable(bgfx)
 
-    target_include_directories(plaster PRIVATE ${bgfx_SOURCE_DIR}/include)
     target_link_libraries(plaster PUBLIC bgfx)
 endif()
 
