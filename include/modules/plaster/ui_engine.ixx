@@ -6,7 +6,7 @@ module;
 #include <string>
 // check if on windows
 #if defined(_WIN32)
-#include<stdexcept>
+#include <stdexcept>
 #endif
 
 export module plaster.ui.engine;
