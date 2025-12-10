@@ -3,6 +3,9 @@ module;
 #include <bgfx/bgfx.h>
 #include <cstdint>
 #include <glm/glm.hpp>
+#if defined(_WIN32)
+#include <cstring>
+#endif
 
 export module plaster.renderer;
 

@@ -4,6 +4,10 @@ module;
 #include <glm/glm.hpp>
 #include <map>
 #include <string>
+// check if on windows
+#if defined(_WIN32)
+#include<stdexcept>
+#endif
 
 export module plaster.ui.engine;
 import plaster.input.manager;
