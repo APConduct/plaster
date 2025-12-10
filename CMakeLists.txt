@@ -7,9 +7,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Try to find packages - handle both vcpkg and MSYS2 scenarios
-find_package(glfw3 3.3 QUIET)
-find_package(bgfx QUIET)
+find_package(glfw3 CONFIG QUIET)
+find_package(bgfx CONFIG QUIET)  # Prefer CONFIG mode for vcpkg
 find_package(Lua 5.4 QUIET)
+find_package(glm CONFIG QUIET)   # Header-only in vcpkg, target provides include dirs
+find_package(raylib CONFIG QUIET)
+
 
 # If packages not found via CMake, try pkg-config (MSYS2)
 if(NOT glfw3_FOUND)
@@ -126,62 +129,56 @@ if(USE_FETCHCONTENT_BGFX AND bgfx_FOUND)
 endif()
 
 # Link libraries based on what we found
-set(PLASTER_LIBS "")
 
 # GLFW3
 if(glfw3_FOUND)
-    list(APPEND PLASTER_LIBS glfw)
-elseif(GLFW3_FOUND)
-    list(APPEND PLASTER_LIBS ${GLFW3_LIBRARIES})
+    target_link_libraries(plaster PUBLIC glfw)
+elseif(GLFW3_FOUND) # PkgConfig fallback
+    target_include_directories(plaster PRIVATE ${GLFW3_INCLUDE_DIRS})
     target_link_directories(plaster PUBLIC ${GLFW3_LIBRARY_DIRS})
+    target_link_libraries(plaster PUBLIC ${GLFW3_LIBRARIES})
 else()
     message(WARNING "GLFW3 not found - you may need to install it")
 endif()
 
-# bgfx (available through vcpkg or FetchContent)
-if(bgfx_FOUND OR USE_FETCHCONTENT_BGFX)
-    target_include_directories(plaster PRIVATE ${bgfx_SOURCE_DIR}/include)
-    if(USE_FETCHCONTENT_BGFX)
-        list(APPEND PLASTER_LIBS bgfx)
-        message(STATUS "Using bgfx from FetchContent")
-    elseif(bgfx_FOUND)
-        list(APPEND PLASTER_LIBS bgfx)
-        message(STATUS "Using bgfx from vcpkg/system")
-    endif()
-else()
-    if(USE_FETCHCONTENT_BGFX)
-        message(WARNING "FetchContent bgfx failed - check network connection and git availability")
-    else()
-        message(WARNING "bgfx not found - you may need to build it from source, use vcpkg, or enable FetchContent")
-    endif()
-endif()
-
 # Lua
-if(Lua_FOUND)
-    list(APPEND PLASTER_LIBS ${LUA_LIBRARIES})
-elseif(LUA_FOUND)
-    list(APPEND PLASTER_LIBS ${LUA_LIBRARIES})
+if(Lua_FOUND) # CMake find_package Lua
+    target_include_directories(plaster PRIVATE ${LUA_INCLUDE_DIR})
+    target_link_libraries(plaster PUBLIC ${LUA_LIBRARIES})
+elseif(LUA_FOUND) # PkgConfig fallback
+    target_include_directories(plaster PRIVATE ${LUA_INCLUDE_DIRS})
     target_link_directories(plaster PUBLIC ${LUA_LIBRARY_DIRS})
+    target_link_libraries(plaster PUBLIC ${LUA_LIBRARIES})
 else()
     message(WARNING "Lua not found - you may need to install it")
 endif()
 
-# GLM is header-only, no linking needed
+# GLM (header-only)
+if(glm_FOUND)
+    # In CONFIG mode: glm::glm target exposes include dirs
+    target_link_libraries(plaster PUBLIC glm::glm)
+elseif(GLM_FOUND) # PkgConfig fallback
+    target_include_directories(plaster PRIVATE ${GLM_INCLUDE_DIRS})
+endif()
 
 # Raylib
 if(raylib_FOUND)
-    list(APPEND PLASTER_LIBS raylib)
-elseif(RAYLIB_FOUND)
-    list(APPEND PLASTER_LIBS ${RAYLIB_LIBRARIES})
+    target_link_libraries(plaster PUBLIC raylib)
+elseif(RAYLIB_FOUND) # PkgConfig fallback
+    target_include_directories(plaster PRIVATE ${RAYLIB_INCLUDE_DIRS})
     target_link_directories(plaster PUBLIC ${RAYLIB_LIBRARY_DIRS})
+    target_link_libraries(plaster PUBLIC ${RAYLIB_LIBRARIES})
 else()
     message(WARNING "raylib not found - you may need to install it")
 endif()
+
 
 target_link_libraries(plaster
     PUBLIC
         ${PLASTER_LIBS}
 )
+
+add_subdirectory(examples)
 
 install(
     DIRECTORY include/
