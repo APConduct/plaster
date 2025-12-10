@@ -30,10 +30,14 @@ detect_os() {
 OS="$(detect_os)"
 echo "Detected OS: $OS"
 
-# Clean previous build if it exists
+# Clean previous build if it exists (optional: set CLEAN=1 to force)
 if [ -d "./cmake-build-debug" ]; then
-    echo "Cleaning previous build directory..."
-    rm -rf ./cmake-build-debug
+    if [ "${CLEAN:-0}" = "1" ]; then
+        echo "Cleaning previous build directory..."
+        rm -rf ./cmake-build-debug
+    else
+        echo "Reusing existing build directory (set CLEAN=1 to force clean)"
+    fi
 fi
 
 echo "Building $PROJECT_NAME in Debug mode..."
@@ -111,7 +115,7 @@ case "$OS" in
             CMAKE_CXX_COMPILER="clang++"
             CMAKE_GENERATOR="Ninja"
             CMAKE_MAKE_PROGRAM="ninja"
-            CXX_FLAGS="-Wall -Wextra -Wpedantic -g -std=c++23"
+            CXX_FLAGS="-Wall -Wextra -Wpedantic -g"
             LINKER_FLAGS=""
             VCPKG_TRIPLET="x64-windows"
             BUILD_COMMAND="ninja -C ./cmake-build-debug"
@@ -126,7 +130,7 @@ case "$OS" in
             CMAKE_CXX_COMPILER="clang++"
             CMAKE_GENERATOR="Ninja"
             CMAKE_MAKE_PROGRAM="ninja"
-            CXX_FLAGS="-Wall -Wextra -Wpedantic -g -std=c++23"
+            CXX_FLAGS="-Wall -Wextra -Wpedantic -g"
             LINKER_FLAGS=""
             VCPKG_TRIPLET=""
             BUILD_COMMAND="ninja -C ./cmake-build-debug"
@@ -138,7 +142,7 @@ case "$OS" in
             if command -v clang >/dev/null 2>&1; then
                 CMAKE_C_COMPILER="clang"
                 CMAKE_CXX_COMPILER="clang++"
-                CXX_FLAGS="-Wall -Wextra -Wpedantic -g -std=c++23"
+                CXX_FLAGS="-Wall -Wextra -Wpedantic -g"
                 echo "  → Will use Clang for project compilation"
             else
                 CMAKE_C_COMPILER=""
@@ -192,6 +196,20 @@ done
 if [ -z "$VCPKG_TOOLCHAIN" ]; then
     echo "Warning: vcpkg toolchain file not found. Building without vcpkg..."
     echo "Searched in common locations. Set VCPKG_ROOT environment variable if needed."
+else
+    # Prefer vcpkg for all dependencies on Windows when available
+    if [ "$OS" = "windows" ]; then
+        echo "Windows: using vcpkg for all dependencies"
+        USE_MSYS2_PACKAGES=false
+        USE_HYBRID_APPROACH=false
+        USE_FETCHCONTENT_BGFX=false
+        CMAKE_GENERATOR="${CMAKE_GENERATOR:-Ninja}"
+        CMAKE_MAKE_PROGRAM="${CMAKE_MAKE_PROGRAM:-ninja}"
+        if [ -z "$CMAKE_C_COMPILER" ]; then CMAKE_C_COMPILER="clang"; fi
+        if [ -z "$CMAKE_CXX_COMPILER" ]; then CMAKE_CXX_COMPILER="clang++"; fi
+        VCPKG_TRIPLET="${VCPKG_TRIPLET:-x64-windows}"
+        BUILD_COMMAND="ninja -C ./cmake-build-debug"
+    fi
 fi
 
 # Build CMake command
