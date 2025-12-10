@@ -1,1 +1,68 @@
-./cmake-build-debug/compile_commands.json
+[
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\flat\\point.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\flat\\point.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\flat\\point.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/flat/point.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/flat/point.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\plaster\\renderer.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\plaster\\renderer.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\plaster\\renderer.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/plaster/renderer.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/plaster/renderer.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\plaster\\ui_engine.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\plaster\\ui_engine.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\plaster\\ui_engine.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/plaster/ui_engine.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/plaster/ui_engine.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\plaster\\input_manager.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\plaster\\input_manager.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\plaster\\input_manager.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/plaster/input_manager.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/plaster/input_manager.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\plaster\\lua_api.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\plaster\\lua_api.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\plaster\\lua_api.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/plaster/lua_api.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/plaster/lua_api.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\plaster\\context.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\plaster\\context.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\plaster\\context.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/plaster/context.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/plaster/context.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\plaster\\ui_engine_context.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\plaster\\ui_engine_context.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\plaster\\ui_engine_context.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/plaster/ui_engine_context.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/plaster/ui_engine_context.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\flat\\size.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\flat\\size.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\flat\\size.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/flat/size.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/flat/size.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\flat\\flat.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\flat\\flat.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\flat\\flat.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/flat/flat.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/flat/flat.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -IC:/msys64/home/aidan/projects/CppPlace/plaster/src -IC:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/_deps/bgfx-src/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @CMakeFiles\\plaster.dir\\include\\modules\\plaster.ixx.obj.modmap -o CMakeFiles\\plaster.dir\\include\\modules\\plaster.ixx.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\include\\modules\\plaster.ixx",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/include/modules/plaster.ixx",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/CMakeFiles/plaster.dir/include/modules/plaster.ixx.obj"
+},
+{
+  "directory": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -DGLFW_DLL -IC:/msys64/home/aidan/projects/CppPlace/plaster/include -Wall -Wextra -Wpedantic -g -std=c++23 -g -std=c++23 -IC:/msys64/ucrt64/include @examples\\CMakeFiles\\basic_example.dir\\basic_example\\main.cpp.obj.modmap -o examples\\CMakeFiles\\basic_example.dir\\basic_example\\main.cpp.obj -c C:\\msys64\\home\\aidan\\projects\\CppPlace\\plaster\\examples\\basic_example\\main.cpp",
+  "file": "C:/msys64/home/aidan/projects/CppPlace/plaster/examples/basic_example/main.cpp",
+  "output": "C:/msys64/home/aidan/projects/CppPlace/plaster/cmake-build-debug/examples/CMakeFiles/basic_example.dir/basic_example/main.cpp.obj"
+}
+]
